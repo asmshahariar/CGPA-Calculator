@@ -17,7 +17,3 @@ https://cgpa12.netlify.app
 
 ---
 
-## 📐 How It Works
-
-The calculator uses this formula:
-
