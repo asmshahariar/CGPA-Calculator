@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shahariar</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>📘 CGPA Calculator</h1>
+      <div class="form">
+        <label>Total Credits</label>
+        <input type="number" id="totalCredits" placeholder="e.g. 160" value="" />
+
+        <label>Completed Credits</label>
+        <input type="number" id="completedCredits" placeholder="e.g. 120" value="" />
+
+        <label>Current CGPA</label>
+        <input type="number" step="0.01" id="currentCGPA" placeholder="e.g. 3.25" value="" />
+
+        <label>Expected Grade for Remaining Credits</label>
+        <select id="expectedGrade">
+          <option value="4">A (4.00)</option>
+          <option value="3.5">B+ (3.50)</option>
+          <option value="3">B (3.00)</option>
+          <option value="2.5" selected>C (2.50)</option>
+          <option value="2">D (2.00)</option>
+          <option value="0">F (0.00)</option>
+        </select>
+
+        <button onclick="calculateCGPA()">Calculate</button>
+        <div id="result"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
